@@ -10,12 +10,6 @@ export default class Ex_shop extends Component {
     gioHang: [],
   };
   cloneGioHang = [...this.state.gioHang];
-  // handleShop = () => {
-  //   if (this.state.gioHang.length == 0) {
-  //     alert("123");
-  //     return;
-  //   }
-  // }
   handleIncrease = (object) => {
     let i = this.state.gioHang.findIndex((item) => {
       return item.id === object.id;
@@ -64,7 +58,6 @@ export default class Ex_shop extends Component {
       {
         gioHang: this.cloneGioHang,
       }
-      // () => { console.log('this.state', this.state) }
     );
   };
   render() {
